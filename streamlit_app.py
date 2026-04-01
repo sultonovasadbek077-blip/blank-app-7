@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 from groq import Groq
 
 # 1. Groq AI sozlamalari
-GROQ_API_KEY = "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"
+# Kalitni o'chirib, o'rniga mana buni yozing:
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 client = Groq(api_key=GROQ_API_KEY)
-
 st.set_page_config(page_title="Smart Wallet", page_icon="💰")
 st.title("💰 Moliyaviy Reja va Aqlli AI")
 
